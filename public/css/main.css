@@ -93,5 +93,5 @@ input[type="submit"] {
 }
 
 .but:nth-child(n+10) {
-  
+  background-color: rgba(31, 33, 101, 0.5);
 }
