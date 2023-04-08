@@ -85,3 +85,9 @@ input[type="submit"] {
 .hide {
   display: none;
 }
+
+.but:nth-child(1) {
+  background-color: yellow;
+  color: black;
+  border: 3px solid black;
+}
