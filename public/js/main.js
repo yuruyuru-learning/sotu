@@ -10,10 +10,6 @@ window.onload = () => {
   ws.onmessage = msg => {
     $("#messageBox").append("<div class='but'><h3>" + msg.data + "</h3></div>")
   }
-  $("#form").on("submit", e => {
-    ws.send($("#send").val())
-    e.preventDefault()
-  })
 
   setTimeout(sayHi, 1000)
 }

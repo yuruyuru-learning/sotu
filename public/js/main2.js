@@ -6,6 +6,7 @@ function sayHi() {
 }
 
 window.onload = () => {
+    ws = new WebSocket("wss://" + window.location.host + "/websocket")
     $("#form").on("submit", e => {
       ws = new WebSocket("wss://" + window.location.host + "/websocket")
       ws.send($("#send").val())
