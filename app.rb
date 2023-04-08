@@ -14,6 +14,10 @@ get '/' do
   erb :index
 end
 
+get '/result' do
+  erb :result
+end
+
 get '/websocket' do
   if request.websocket?
     request.websocket do |ws|
