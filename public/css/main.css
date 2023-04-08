@@ -91,3 +91,7 @@ input[type="submit"] {
   color: black;
   border: 3px solid black;
 }
+
+.but:nth-child(n+10) {
+  
+}
