@@ -79,6 +79,7 @@ input[type="submit"] {
   border-radius: 20px;
   color: white;
   font-size: 70px;
+  margin: 10px;
 }
 
 .hide {
