@@ -8,3 +8,7 @@ create:
 	rbenv exec bundle exec rake db:create_migration NAME=${NAME}
 seed:
 	rbenv exec bundle exec rake db:seed
+push: 
+	git add .
+	git commit -m "a"
+	git push origin master

@@ -5,7 +5,6 @@ window.onload = () => {
   }
   $("#form").on("submit", e => {
     ws.send($("#send").val())
-    $("#send").val("")
     e.preventDefault()
   })
 }
