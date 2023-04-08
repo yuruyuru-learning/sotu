@@ -73,10 +73,13 @@ input[type="submit"] {
 .but {
   width: 70vw;
   height: 100px;
-  background-image: url(/img/but.jpg);
-  background-repeat: repeat;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 3px solid white;
+  background-color: rgba(31, 33, 101, 1);
+  border-radius: 20px;
+  color: white;
+  font-size: 70px;
 }
