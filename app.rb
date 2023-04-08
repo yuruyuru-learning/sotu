@@ -26,7 +26,7 @@ get '/websocket' do
         settings.sockets << ws
       end
       ws.onmessage do |msg|
-        if mes == "0"
+        if msg == "0"
           settings.raws.each do |r|
             r.send(msg)
           end
