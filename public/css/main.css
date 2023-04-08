@@ -58,10 +58,25 @@ input[type="submit"] {
 }
 
 #messageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 80vw;
   margin-left: 10vw;
 }
 
 .hide {
   display: none;
+}
+
+.but {
+  width: 70vw;
+  height: 100px;
+  background-image: url(/img/but.jpg);
+  background-repeat: repeat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
