@@ -4,9 +4,6 @@ require 'sinatra/cookies'
 # load models
 require "./models/models.rb"
 
-# load modules
-require "pry" if development?
-
 # configs
 enable :sessions
 
