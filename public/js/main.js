@@ -1,6 +1,7 @@
 let ws
 
 function sayHi() {
+  ws.reconnect()
   ws.send("0")
   setTimeout(sayHi, 1000)
 }
