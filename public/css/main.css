@@ -58,16 +58,13 @@ input[type="submit"] {
 }
 
 #messageBox {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 80vw;
   margin-left: 10vw;
-}
-
-.hide {
-  display: none;
 }
 
 .but {
@@ -82,4 +79,8 @@ input[type="submit"] {
   border-radius: 20px;
   color: white;
   font-size: 70px;
+}
+
+.hide {
+  display: none;
 }
