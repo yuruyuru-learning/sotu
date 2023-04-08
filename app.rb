@@ -9,6 +9,7 @@ end
 
 set :server, 'thin'
 set :sockets, []
+set :raws, []
 
 get '/' do
   erb :index

@@ -1,5 +1,7 @@
+let ws
+
 window.onload = () => {
-  let ws = new WebSocket("wss://" + window.location.host + "/websocket")
+  ws = new WebSocket("wss://" + window.location.host + "/websocket")
   ws.onmessage = msg => {
     $("#messageBox").append("<div class='but'><h3>" + msg.data + "</h3></div>")
   }
@@ -7,4 +9,6 @@ window.onload = () => {
     ws.send($("#send").val())
     e.preventDefault()
   })
+
+  setTimeout(sayHi, 1000)
 }
