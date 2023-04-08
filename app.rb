@@ -26,8 +26,14 @@ get '/websocket' do
         settings.sockets << ws
       end
       ws.onmessage do |msg|
-        settings.sockets.each do |s|
-          s.send(msg)
+        if mes == "0"
+          settings.raws.each do |r|
+            r.send(msg)
+          end
+        else
+          settings.sockets.each do |s|
+            s.send(msg)
+          end
         end
       end
       ws.onclose do

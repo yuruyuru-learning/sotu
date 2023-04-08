@@ -9,6 +9,4 @@ window.onload = () => {
     ws.send($("#send").val())
     e.preventDefault()
   })
-
-  setTimeout(sayHi, 1000)
 }
